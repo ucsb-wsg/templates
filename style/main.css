@@ -1,0 +1,387 @@
+/**
+ * This CSS file is split into a number of sections for organization. Each section is titled by a CSS comment
+ * header in the following format: "=NAME-OF-SECTION". The purpose of prefixing each title with an equals ("=")
+ * oeprator is to make it easier to locate a section with CTRL+F since the equals operator is not used often
+ * within CSS.
+ * 
+ */
+
+/* =RESPONSIVE-FIXES
+------------------------------------------------------- */
+
+@viewport {
+	width: extend-to-zoom;
+	zoom: 1.0;
+}
+
+@-ms-viewport {
+	width: extend-to-zoom;
+	zoom: 1.0;
+}  
+
+/* =GLOBAL
+------------------------------------------------------- */
+
+body {
+	background: #A1B3C7 url(../images/bg-blue-lines.jpg);
+	font-family: Arial, sans-serif;
+	font-size: 100%;
+	margin: 0;
+}
+    
+.hidden {
+	height: 1px;
+	left: -9999%;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+
+.container {
+	background-color:#FFF;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+ul,ol {
+	margin: 1.5em 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	clear:both;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	margin: 0.5em 0;
+}
+h1 {
+  color: #0039A6;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #053768;
+  font-size: 1.8em;
+}
+
+h3{
+  color: #336699;
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.0em;
+}
+
+figure {
+	border: 1px solid #CCCCCC;
+	float: left;
+	margin: 0 20px 5px 0;
+	padding: 5px;
+}
+
+figcaption {
+	margin: 0;
+	font-size: 0.8em;
+	font-style: italic;
+	padding-top: 5px;
+	text-align: center;
+}
+
+/* =HEADER
+------------------------------------------------------- */
+
+.ucsb-header {
+	background: #053768;
+	font-family: 'Karla', Arial, Times, sans-serif;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.ucsb-header a, .ucsb-header a:visited {
+	color: #FFCA72;
+	display: block;
+	font-size: 0.75em;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	padding: 0.5em 0;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.ucsb-header a:hover, .ucsb-header a:focus{
+	color: #FFF;
+	background-color: #003B6B;
+}
+
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+header h1 {
+	background: #fff url(../images/banner_ucsealsmall.jpg) no-repeat right;
+	font-family: Times, serif;
+	font-size: 2em;
+	margin: 0;
+	padding: 2% 0;
+	text-transform: none;
+}
+
+header h1 a, header h1 a:visited, header h1 a:hover, header h1 a:focus {
+	color: #053768;
+	text-decoration: none;
+}
+
+/* =MAIN
+------------------------------------------------------- */
+
+main {
+	font-size: 0.9em;
+}
+
+section {
+	margin: 1.5% 3%;
+}
+
+/* =NAVIGATION
+------------------------------------------------------- */
+
+nav a, nav a:visited {
+	color: #006;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+	color: #666;
+	text-decoration: underline;
+}
+
+nav h1 {
+	background-color: #CCC;
+	border: none;  
+	font-size: 1.6em;
+	margin: 0;
+	text-align: center;      
+}
+
+nav h1 a:before {
+	content: '\2630';
+	padding-right: 0.5em;
+}
+
+nav a {
+	display: block;
+	padding: 0.3em 0;
+}
+
+nav h1 a, nav h1 a:visited, nav h1 a:hover, nav h1 a:focus {
+	text-decoration: none;
+}
+
+nav ul {
+	font-size: 1em;
+	list-style: none; 
+	margin: 0;
+	padding: 0;         
+}
+
+nav ul.closed, nav ul.closed ul {
+	display: none;
+}
+
+nav ul li {
+	background-color: #EEE;
+	border-top: 1px solid #CCC;
+	text-align: center;
+}
+
+nav ul li li {
+	background-color:#FCFCFC;
+	font-size: 0.8em;
+	text-align:center;
+} 
+
+nav ul a {
+	padding: 2% 0;
+}
+
+/* =FOOTER
+------------------------------------------------------- */
+
+footer {
+	background: #FFF;
+	border-top: 1px dashed #CCCCCC;
+	font-size: 0.7em;
+	margin: 0 auto;
+	padding: 0.5% 0 1%;
+	text-align: center;        
+}
+
+footer a, footer a:visited {
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+	text-decoration: underline;
+}
+
+.copyright {
+	display: block;
+}
+
+.last-modified {
+	display: block;
+}
+
+.tou-link, .privacy-link, .access-link {
+	margin: 0 0.5em;
+}
+    
+/* =MEDIA-QUERIES
+------------------------------------------------------- */
+
+@media all and (min-width: 40em) {
+
+	header h1 {
+		font-size: 2.4em;
+	}
+
+}
+
+@media all and (min-width: 60em) {
+
+	.container, .ucsb-header, header, footer {
+		max-width: 960px;
+	}
+
+	.ucsb-header{
+		margin-top: 8px;
+	}
+	
+	header h1 {
+		border-bottom: 1px solid #CCCCCC; 
+		font-size: 2.6em;
+	}
+	
+	main {
+		border-left: 1px solid #CCCCCC;
+		float: right; 
+		width: 79%;
+		margin: 10px 0;
+	}
+
+	nav {
+		float:left;
+		margin: 15px 0; 
+		width: 20%;
+	}
+	
+	nav h1 {
+		height: 1px;
+		left: -9999%;
+		overflow: hidden;
+		position: absolute;
+		top: auto;
+		width: 1px;
+	}
+	
+	nav ul {
+		padding: 0 0 0 26%;          
+	}
+	
+	nav ul ul {
+		padding: 0 0 0 10%;
+	}
+	
+	nav ul li {
+		background-color: transparent;
+		border: none;
+		margin: 3% 0;
+		padding: 0;
+		text-align: left;
+	}  
+	
+	nav ul li li {
+		text-align: left;
+	}
+	
+	nav ul.closed, nav ul.closed ul {
+		display: block;
+	}
+}
+
+/* =FIXED-WIDTH
+------------------------------------------------------- */
+
+.fixed .container, .fixed .ucsb-header, .fixed header, .fixed footer {
+	width: 960px;
+}
+
+.fixed .ucsb-header{
+	margin-top: 8px;
+}
+
+.fixed header h1 {
+	border-bottom: 1px solid #CCCCCC; 
+	font-size: 2.6em;
+}
+
+.fixed main {
+	border-left: 1px solid #CCCCCC;
+	float: right; 
+	width: 79%;
+	margin: 10px 0;
+}
+
+.fixed nav {
+	float:left;
+	margin: 15px 0; 
+	width: 20%;
+}
+
+.fixed nav h1 {
+	height: 1px;
+	left: -9999%;
+	overflow: hidden;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+
+.fixed nav ul {
+	padding: 0 0 0 26%;          
+}
+
+.fixed nav ul ul {
+	padding: 0 0 0 10%;
+}
+
+.fixed nav ul li {
+	background-color: transparent;
+	border: none;
+	margin: 3% 0;
+	padding: 0;
+	text-align: left;
+}  
+
+.fixed nav ul li li {
+	text-align: left;
+}
+
+.fixed nav ul.closed, .fixed nav ul.closed ul {
+	display: block;
+}
