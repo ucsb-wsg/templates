@@ -3,7 +3,7 @@
  * header in the following format: "=NAME-OF-SECTION". The purpose of prefixing each title with an equals ("=")
  * oeprator is to make it easier to locate a section with CTRL+F since the equals operator is not used often
  * within CSS.
- * 
+ *
  */
 
 /* =RESPONSIVE-FIXES
@@ -17,7 +17,7 @@
 @-ms-viewport {
 	width: extend-to-zoom;
 	zoom: 1.0;
-}  
+}
 
 /* =GLOBAL
 ------------------------------------------------------- */
@@ -28,7 +28,7 @@ body {
 	font-size: 100%;
 	margin: 0;
 }
-    
+
 .hidden {
 	height: 1px;
 	left: -9999%;
@@ -168,15 +168,15 @@ nav a:hover, nav a:focus {
 	text-decoration: underline;
 }
 
-nav h1 {
+nav h2 {
 	background-color: #CCC;
-	border: none;  
+	border: none;
 	font-size: 1.6em;
 	margin: 0;
-	text-align: center;      
+	text-align: center;
 }
 
-nav h1 a:before {
+nav h2 a:before {
 	content: '\2630';
 	padding-right: 0.5em;
 }
@@ -186,15 +186,15 @@ nav a {
 	padding: 0.3em 0;
 }
 
-nav h1 a, nav h1 a:visited, nav h1 a:hover, nav h1 a:focus {
+nav h2 a, nav h2 a:visited, nav h2 a:hover, nav h2 a:focus {
 	text-decoration: none;
 }
 
 nav ul {
 	font-size: 1em;
-	list-style: none; 
+	list-style: none;
 	margin: 0;
-	padding: 0;         
+	padding: 0;
 }
 
 nav ul.closed, nav ul.closed ul {
@@ -211,7 +211,7 @@ nav ul li li {
 	background-color:#FCFCFC;
 	font-size: 0.8em;
 	text-align:center;
-} 
+}
 
 nav ul a {
 	padding: 2% 0;
@@ -226,7 +226,7 @@ footer {
 	font-size: 0.7em;
 	margin: 0 auto;
 	padding: 0.5% 0 1%;
-	text-align: center;        
+	text-align: center;
 }
 
 footer a, footer a:visited {
@@ -250,7 +250,7 @@ footer a:hover, footer a:focus {
 .tou-link, .privacy-link, .access-link {
 	margin: 0 0.5em;
 }
-    
+
 /* =MEDIA-QUERIES
 ------------------------------------------------------- */
 
@@ -271,26 +271,26 @@ footer a:hover, footer a:focus {
 	.ucsb-header{
 		margin-top: 8px;
 	}
-	
+
 	header h1 {
-		border-bottom: 1px solid #CCCCCC; 
+		border-bottom: 1px solid #CCCCCC;
 		font-size: 2.6em;
 	}
-	
+
 	main {
 		border-left: 1px solid #CCCCCC;
-		float: right; 
+		float: right;
 		width: 79%;
 		margin: 10px 0;
 	}
 
 	nav {
 		float:left;
-		margin: 15px 0; 
+		margin: 15px 0;
 		width: 20%;
 	}
-	
-	nav h1 {
+
+	nav h2 {
 		height: 1px;
 		left: -9999%;
 		overflow: hidden;
@@ -298,27 +298,27 @@ footer a:hover, footer a:focus {
 		top: auto;
 		width: 1px;
 	}
-	
+
 	nav ul {
-		padding: 0 0 0 26%;          
+		padding: 0 0 0 26%;
 	}
-	
+
 	nav ul ul {
 		padding: 0 0 0 10%;
 	}
-	
+
 	nav ul li {
 		background-color: transparent;
 		border: none;
 		margin: 3% 0;
 		padding: 0;
 		text-align: left;
-	}  
-	
+	}
+
 	nav ul li li {
 		text-align: left;
 	}
-	
+
 	nav ul.closed, nav ul.closed ul {
 		display: block;
 	}
@@ -336,24 +336,24 @@ footer a:hover, footer a:focus {
 }
 
 .fixed header h1 {
-	border-bottom: 1px solid #CCCCCC; 
+	border-bottom: 1px solid #CCCCCC;
 	font-size: 2.6em;
 }
 
 .fixed main {
 	border-left: 1px solid #CCCCCC;
-	float: right; 
+	float: right;
 	width: 79%;
 	margin: 10px 0;
 }
 
 .fixed nav {
 	float:left;
-	margin: 15px 0; 
+	margin: 15px 0;
 	width: 20%;
 }
 
-.fixed nav h1 {
+.fixed nav h2 {
 	height: 1px;
 	left: -9999%;
 	overflow: hidden;
@@ -363,7 +363,7 @@ footer a:hover, footer a:focus {
 }
 
 .fixed nav ul {
-	padding: 0 0 0 26%;          
+	padding: 0 0 0 26%;
 }
 
 .fixed nav ul ul {
@@ -376,7 +376,7 @@ footer a:hover, footer a:focus {
 	margin: 3% 0;
 	padding: 0;
 	text-align: left;
-}  
+}
 
 .fixed nav ul li li {
 	text-align: left;
